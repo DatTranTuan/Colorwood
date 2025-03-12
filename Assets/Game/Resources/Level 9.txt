@@ -1,0 +1,177 @@
+{
+  "LevelID": 9,
+  "storeDatas": [
+    {
+      "posIndex": 0,
+      "woodDatas": [
+        {
+          "woodType": 2,
+          "index": 0,
+          "isLiquid": true
+        },
+        {
+          "woodType": 6,
+          "index": 1,
+          "isLiquid": true
+        },
+        {
+          "woodType": 2,
+          "index": 2,
+          "isLiquid": true
+        },
+        {
+          "woodType": 4,
+          "index": 3,
+          "isLiquid": false
+        }
+      ],
+      "isLock": false
+    },
+    {
+      "posIndex": 1,
+      "woodDatas": [
+        {
+          "woodType": 3,
+          "index": 0,
+          "isLiquid": true
+        },
+        {
+          "woodType": 5,
+          "index": 1,
+          "isLiquid": true
+        },
+        {
+          "woodType": 2,
+          "index": 2,
+          "isLiquid": true
+        },
+        {
+          "woodType": 7,
+          "index": 3,
+          "isLiquid": false
+        }
+      ],
+      "isLock": false
+    },
+    {
+      "posIndex": 2,
+      "woodDatas": [
+        {
+          "woodType": 7,
+          "index": 0,
+          "isLiquid": true
+        },
+        {
+          "woodType": 4,
+          "index": 1,
+          "isLiquid": true
+        },
+        {
+          "woodType": 5,
+          "index": 2,
+          "isLiquid": true
+        },
+        {
+          "woodType": 5,
+          "index": 3,
+          "isLiquid": false
+        }
+      ],
+      "isLock": false
+    },
+    {
+      "posIndex": 3,
+      "woodDatas": [
+        {
+          "woodType": 4,
+          "index": 0,
+          "isLiquid": true
+        },
+        {
+          "woodType": 6,
+          "index": 1,
+          "isLiquid": true
+        },
+        {
+          "woodType": 7,
+          "index": 2,
+          "isLiquid": true
+        },
+        {
+          "woodType": 3,
+          "index": 3,
+          "isLiquid": false
+        }
+      ],
+      "isLock": false
+    },
+    {
+      "posIndex": -15,
+      "woodDatas": [
+        {
+          "woodType": 7,
+          "index": 0,
+          "isLiquid": true
+        },
+        {
+          "woodType": 2,
+          "index": 1,
+          "isLiquid": true
+        },
+        {
+          "woodType": 3,
+          "index": 2,
+          "isLiquid": true
+        },
+        {
+          "woodType": 3,
+          "index": 3,
+          "isLiquid": false
+        }
+      ],
+      "isLock": false
+    },
+    {
+      "posIndex": 45,
+      "woodDatas": [
+        {
+          "woodType": 6,
+          "index": 0,
+          "isLiquid": true
+        },
+        {
+          "woodType": 6,
+          "index": 1,
+          "isLiquid": true
+        },
+        {
+          "woodType": 5,
+          "index": 2,
+          "isLiquid": true
+        },
+        {
+          "woodType": 4,
+          "index": 3,
+          "isLiquid": false
+        }
+      ],
+      "isLock": false
+    },
+    {
+      "posIndex": 55,
+      "woodDatas": [],
+      "isLock": false
+    },
+    {
+      "posIndex": 65,
+      "woodDatas": [],
+      "isLock": false
+    },
+    {
+      "posIndex": 75,
+      "woodDatas": [],
+      "isLock": true
+    }
+  ],
+  "winCount": 6
+}

@@ -1,0 +1,99 @@
+{
+  "LevelID": 3,
+  "storeDatas": [
+    {
+      "posIndex": 15,
+      "woodDatas": [
+        {
+          "woodType": 6,
+          "index": 0,
+          "isLiquid": false
+        },
+        {
+          "woodType": 5,
+          "index": 1,
+          "isLiquid": false
+        },
+        {
+          "woodType": 3,
+          "index": 2,
+          "isLiquid": false
+        },
+        {
+          "woodType": 6,
+          "index": 3,
+          "isLiquid": false
+        }
+      ],
+      "isLock": false
+    },
+    {
+      "posIndex": 25,
+      "woodDatas": [
+        {
+          "woodType": 5,
+          "index": 0,
+          "isLiquid": false
+        },
+        {
+          "woodType": 3,
+          "index": 1,
+          "isLiquid": false
+        },
+        {
+          "woodType": 6,
+          "index": 2,
+          "isLiquid": false
+        },
+        {
+          "woodType": 6,
+          "index": 3,
+          "isLiquid": false
+        }
+      ],
+      "isLock": false
+    },
+    {
+      "posIndex": 35,
+      "woodDatas": [
+        {
+          "woodType": 3,
+          "index": 0,
+          "isLiquid": false
+        },
+        {
+          "woodType": 5,
+          "index": 1,
+          "isLiquid": false
+        },
+        {
+          "woodType": 3,
+          "index": 2,
+          "isLiquid": false
+        },
+        {
+          "woodType": 5,
+          "index": 3,
+          "isLiquid": false
+        }
+      ],
+      "isLock": false
+    },
+    {
+      "posIndex": 45,
+      "woodDatas": [],
+      "isLock": false
+    },
+    {
+      "posIndex": 55,
+      "woodDatas": [],
+      "isLock": false
+    },
+    {
+      "posIndex": 65,
+      "woodDatas": [],
+      "isLock": true
+    }
+  ],
+  "winCount": 3
+}

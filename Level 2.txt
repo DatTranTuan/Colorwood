@@ -1,0 +1,63 @@
+{
+  "LevelID": 2,
+  "storeDatas": [
+    {
+      "posIndex": 45,
+      "woodDatas": [
+        {
+          "woodType": 6,
+          "index": 0,
+          "isLiquid": false
+        },
+        {
+          "woodType": 5,
+          "index": 1,
+          "isLiquid": false
+        },
+        {
+          "woodType": 6,
+          "index": 2,
+          "isLiquid": false
+        },
+        {
+          "woodType": 5,
+          "index": 3,
+          "isLiquid": false
+        }
+      ],
+      "isLock": false
+    },
+    {
+      "posIndex": 55,
+      "woodDatas": [
+        {
+          "woodType": 5,
+          "index": 0,
+          "isLiquid": false
+        },
+        {
+          "woodType": 6,
+          "index": 1,
+          "isLiquid": false
+        },
+        {
+          "woodType": 5,
+          "index": 2,
+          "isLiquid": false
+        },
+        {
+          "woodType": 6,
+          "index": 3,
+          "isLiquid": false
+        }
+      ],
+      "isLock": false
+    },
+    {
+      "posIndex": 65,
+      "woodDatas": [],
+      "isLock": false
+    }
+  ],
+  "winCount": 2
+}
