@@ -361,7 +361,7 @@ public class WoodStore : MonoBehaviour
                 woodY = headPos.transform.position.y;
 
                 woodBlock.Rendere.sortingOrder = 10;
-                woodBlock.Particel.gameObject.SetActive(true);
+                woodBlock.ParticleColor.ParticleMain.gameObject.SetActive(true);
 
                 woodBlock.transform.DOMove(new Vector2(woodBlock.transform.position.x, woodY), 0.16f).SetEase(Ease.Linear).OnComplete(() =>
                 {
@@ -385,7 +385,8 @@ public class WoodStore : MonoBehaviour
                                 AndroidVibrationController.VibratePattern(new long[] { 0, 50 }, -1, 10);
                             }
 
-                            woodBlock.Particel.gameObject.SetActive(false);
+                            woodBlock.ParticleColor.ParticleMain.gameObject.SetActive(false);
+
                         });
                     });
                 });
@@ -393,7 +394,7 @@ public class WoodStore : MonoBehaviour
             else
             {
                 woodBlock.Rendere.sortingOrder = 10;
-                woodBlock.Particel.gameObject.SetActive(true);
+                woodBlock.ParticleColor.ParticleMain.gameObject.SetActive(true);
 
                 woodBlock.transform.DOJump(new Vector2(headPos.position.x, woodY), jumpPower + 1f, 1, 0.31f)
                 .SetEase(Ease.Linear).OnComplete(() =>
@@ -415,7 +416,7 @@ public class WoodStore : MonoBehaviour
                             AndroidVibrationController.VibratePattern(new long[] { 0, 50 }, -1, 10);
                         }
 
-                        woodBlock.Particel.gameObject.SetActive(false);
+                        woodBlock.ParticleColor.ParticleMain.gameObject.SetActive(false);
                     });
                 });
             }

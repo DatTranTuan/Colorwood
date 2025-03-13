@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class WoodBlock : MonoBehaviour
 {
-    [SerializeField] private ParticleSystem particel;
+    [SerializeField] private ParticleColor particleColor;
 
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Renderer rendere;
@@ -31,7 +31,7 @@ public class WoodBlock : MonoBehaviour
     public int OrderIndex { get => orderIndex; set => orderIndex = value; }
     public Renderer Rendere { get => rendere; set => rendere = value; }
     public SkeletonAnimation Anim { get => anim; set => anim = value; }
-    public ParticleSystem Particel { get => particel; set => particel = value; }
+    public ParticleColor ParticleColor { get => particleColor; set => particleColor = value; }
 
     private void Start()
     {
@@ -103,7 +103,10 @@ public class WoodBlock : MonoBehaviour
                 ChangeCutSprite();
             }
 
-            CheckParticelColor();
+            particleColor.CheckParticelMainColor(woodType);
+            particleColor.CheckParticel1Color(woodType);
+            particleColor.CheckParticel2Color(woodType);
+            particleColor.CheckParticel3Color(woodType);
         }
     }
 
@@ -227,147 +230,6 @@ public class WoodBlock : MonoBehaviour
         //}
 
         ChangeAnimation("animation_2", false);
-    }
-
-    public void CheckParticelColor()
-    {
-        if ((int)woodType == 1)
-        {
-            ParticleSystem.MainModule mainModule = Particel.main;
-            mainModule.startColor = Color.red;
-
-            ParticleSystem.ColorOverLifetimeModule colorModule = Particel.colorOverLifetime;
-            Gradient gradient = new Gradient();
-            gradient.SetKeys(
-                new GradientColorKey[] {
-                new GradientColorKey(Color.red, 0.0f), 
-                new GradientColorKey(Color.red, 1.0f)   
-                },
-                new GradientAlphaKey[] {
-                new GradientAlphaKey(1.0f, 0.0f),
-                new GradientAlphaKey(0.0f, 1.0f)
-                }
-            );
-            colorModule.color = new ParticleSystem.MinMaxGradient(gradient);
-        }
-        else if ((int)woodType == 2)
-        {
-            ParticleSystem.MainModule mainModule = Particel.main;
-            mainModule.startColor = Color.green;
-
-            ParticleSystem.ColorOverLifetimeModule colorModule = Particel.colorOverLifetime;
-            Gradient gradient = new Gradient();
-            gradient.SetKeys(
-                new GradientColorKey[] {
-                new GradientColorKey(Color.green, 0.0f),
-                new GradientColorKey(Color.green, 1.0f)
-                },
-                new GradientAlphaKey[] {
-                new GradientAlphaKey(1.0f, 0.0f),
-                new GradientAlphaKey(0.0f, 1.0f)
-                }
-            );
-            colorModule.color = new ParticleSystem.MinMaxGradient(gradient);
-        }
-        else if ((int)woodType == 3)
-        {
-            ParticleSystem.MainModule mainModule = Particel.main;
-            mainModule.startColor = new Color(0.75f, 0.58f, 0.89f);
-
-            ParticleSystem.ColorOverLifetimeModule colorModule = Particel.colorOverLifetime;
-            Gradient gradient = new Gradient();
-            gradient.SetKeys(
-               new GradientColorKey[] {
-                new GradientColorKey(new Color(0.75f, 0.58f, 0.89f), 0.0f),
-                new GradientColorKey(new Color(0.75f, 0.58f, 0.89f), 1.0f)
-                },
-                new GradientAlphaKey[] {
-                new GradientAlphaKey(1.0f, 0.0f),
-                new GradientAlphaKey(0.0f, 1.0f)
-                }
-            );
-            colorModule.color = new ParticleSystem.MinMaxGradient(gradient);
-        }
-        else if ((int)woodType == 4)
-        {
-            ParticleSystem.MainModule mainModule = Particel.main;
-            mainModule.startColor = new Color(1.0f, 0.71f, 0.76f);
-
-            ParticleSystem.ColorOverLifetimeModule colorModule = Particel.colorOverLifetime;
-            Gradient gradient = new Gradient();
-            gradient.SetKeys(
-                new GradientColorKey[] {
-                new GradientColorKey(new Color(1.0f, 0.71f, 0.76f), 0.0f),
-                new GradientColorKey(new Color(1.0f, 0.71f, 0.76f), 1.0f)
-                },
-                new GradientAlphaKey[] {
-                new GradientAlphaKey(1.0f, 0.0f),
-                new GradientAlphaKey(0.0f, 1.0f)
-                }
-            );
-            colorModule.color = new ParticleSystem.MinMaxGradient(gradient);
-        }
-        else if ((int)woodType == 5)
-        {
-            ParticleSystem.MainModule mainModule = Particel.main;
-            mainModule.startColor = Color.yellow;
-
-            ParticleSystem.ColorOverLifetimeModule colorModule = Particel.colorOverLifetime;
-            Gradient gradient = new Gradient();
-            gradient.SetKeys(
-                new GradientColorKey[] {
-                new GradientColorKey(Color.yellow, 0.0f),
-                new GradientColorKey(Color.yellow, 1.0f)
-                },
-                new GradientAlphaKey[] {
-                new GradientAlphaKey(1.0f, 0.0f),
-                new GradientAlphaKey(0.0f, 1.0f)
-                }
-            );
-            colorModule.color = new ParticleSystem.MinMaxGradient(gradient);
-        }
-        else if ((int)woodType == 6)
-        {
-            ParticleSystem.MainModule mainModule = Particel.main;
-            mainModule.startColor = Color.cyan;
-
-            ParticleSystem.ColorOverLifetimeModule colorModule = Particel.colorOverLifetime;
-            Gradient gradient = new Gradient();
-            gradient.SetKeys(
-                new GradientColorKey[] {
-                new GradientColorKey(Color.cyan, 0.0f),
-                new GradientColorKey(Color.cyan, 1.0f)
-                },
-                new GradientAlphaKey[] {
-                new GradientAlphaKey(1.0f, 0.0f),
-                new GradientAlphaKey(0.0f, 1.0f)
-                }
-            );
-            colorModule.color = new ParticleSystem.MinMaxGradient(gradient);
-        }
-        else if ((int)woodType == 7)
-        {
-            ParticleSystem.MainModule mainModule = Particel.main;
-            mainModule.startColor = new Color(1.0f, 0.75f, 0.5f);
-
-            ParticleSystem.ColorOverLifetimeModule colorModule = Particel.colorOverLifetime;
-            Gradient gradient = new Gradient();
-            gradient.SetKeys(
-               new GradientColorKey[] {
-                new GradientColorKey(new Color(1.0f, 0.75f, 0.5f), 0.0f),
-                new GradientColorKey(new Color(1.0f, 0.75f, 0.5f), 1.0f)
-                },
-                new GradientAlphaKey[] {
-                new GradientAlphaKey(1.0f, 0.0f),
-                new GradientAlphaKey(0.0f, 1.0f)
-                }
-            );
-            colorModule.color = new ParticleSystem.MinMaxGradient(gradient);
-        }
-        else
-        {
-            spriteRenderer.color = Color.black;
-        }
     }
 
     public void ChangeAnimation(string animationName, bool loop = true)

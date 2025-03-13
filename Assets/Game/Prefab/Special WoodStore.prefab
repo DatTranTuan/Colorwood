@@ -456,7 +456,7 @@ MonoBehaviour:
   - {fileID: 1689790317387498737}
   - {fileID: 1280584250981820695}
   mark: {fileID: 1453867245602065388}
-  winPaticel: {fileID: 7322360918738031694, guid: 54fe61337116ea14f9d5dfe5f39e13c2, type: 3}
+  winPaticel: {fileID: 3217154299597243622, guid: 60201f3a477bd314da4055f6cf3a0283, type: 3}
   isLock: 0
   lockPrefab: {fileID: 4796083770913090266, guid: cf92e513d476f614484e20ba29481191, type: 3}
   listWoodBlock: []
