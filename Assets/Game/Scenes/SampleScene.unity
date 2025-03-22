@@ -12620,15 +12620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: {fileID: 1781639433}
-  listWS:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  listWS: []
   listSprite:
   - {fileID: 21300000, guid: 964dac6219c93994b9c8cc1619bbf2bf, type: 2}
   - {fileID: 21300000, guid: bbc217eac08ea1c4da4374e26236671d, type: 2}

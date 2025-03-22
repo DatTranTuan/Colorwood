@@ -385,7 +385,7 @@ public class WoodStore : MonoBehaviour
                                 AndroidVibrationController.VibratePattern(new long[] { 0, 50 }, -1, 10);
                             }
 
-                            woodBlock.ParticleColor.ParticleMain.gameObject.SetActive(false);
+                            //woodBlock.ParticleColor.ParticleMain.gameObject.SetActive(false);
 
                         });
                     });
@@ -416,7 +416,7 @@ public class WoodStore : MonoBehaviour
                             AndroidVibrationController.VibratePattern(new long[] { 0, 50 }, -1, 10);
                         }
 
-                        woodBlock.ParticleColor.ParticleMain.gameObject.SetActive(false);
+                        //woodBlock.ParticleColor.ParticleMain.gameObject.SetActive(false);
                     });
                 });
             }

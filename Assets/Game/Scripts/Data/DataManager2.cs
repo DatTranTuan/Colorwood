@@ -798,7 +798,7 @@ public class DataManager2 : Singleton<DataManager2>
             UIManager.Instance.TurnOnPlayPanel();
             GameManager.Instance.Key.BoxCollider2D.enabled = true;
 
-            //ObjectScaler.Instance.SetScalerWithScreen();
+            StartCoroutine(listLevel[levelIndex - 1].DelayfixScale());
         }
     }
 
@@ -826,7 +826,7 @@ public class DataManager2 : Singleton<DataManager2>
 
         LoadData();
 
-        StartCoroutine(listLevel[levelIndex - 1].DelayfixScale());
+        //StartCoroutine(listLevel[levelIndex - 1].DelayfixScale());
     }
 
     public void DeleteLevel()
